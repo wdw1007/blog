@@ -1108,7 +1108,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://fastly.jsdelivr.net/npm/${name}@latest/${file}
+  custom_format: https://jsd.onmicrosoft.cn/npm/${name}@latest/${file}
 
   option:
     # main_css:
