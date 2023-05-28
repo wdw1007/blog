@@ -495,7 +495,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: G-VB7Z4FFDF2
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -503,8 +503,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics:
-
+cloudflare_analytics: 983b79d11b4447169872f60c7b3fbd11
 # Microsoft Clarity
 # https://clarity.microsoft.com/
 microsoft_clarity:
@@ -1090,7 +1089,7 @@ inject:
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
-
+    <script async src="https://umami.wdw1007.eu.org/script.js" data-website-id="39b857ce-d27f-4358-9162-7235e877a8d5"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
@@ -1098,18 +1097,18 @@ CDN:
   # The CDN provider of internal scripts (主题内部 js 的 cdn 配置)
   # option: local/elemecdn/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主题只能设置为 local )
-  internal_provider: jsdelivr
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: elemecdn/jsdelivr/unpkg/cdnjs/custom
-  third_party_provider: jsdelivr
+  third_party_provider: custom
 
   # Add version number to CDN, true or false
   version: true
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://cdn.jsdelivr.net/npm/${name}@latest/${file}
+  custom_format: https://fastly.jsdelivr.net/npm/${name}@latest/${file}
 
   option:
     # main_css:
