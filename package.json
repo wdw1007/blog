@@ -13,7 +13,14 @@
   },
   "dependencies": {
     "hexo": "7.0.0-rc2",
+<<<<<<< HEAD
     "hexo-algoliasearch": "^1.0.0",
+=======
+<<<<<<< HEAD
+=======
+    "hexo-algoliasearch": "^1.0.0",
+>>>>>>> 2f75674 (update)
+>>>>>>> a8dcf1b (update)
     "hexo-deployer-git": "^4.0.0",
     "hexo-filter-github-emojis": "^3.0.5",
     "hexo-generator-archive": "^2.0.0",
