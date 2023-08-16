@@ -1,4 +1,4 @@
 [submodule "themes/anzhiyu"]
 	path = themes/anzhiyu
-	url = https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git
+	url = https://github.com/wdw1007/hexo-theme-anzhiyu.git
 	branch = main

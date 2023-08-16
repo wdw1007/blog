@@ -4,17 +4,18 @@
 
 # Site
 title: wdw1007 的记事本
-subtitle: ''
+subtitle: '摸鱼'
 description: ''
 keywords:
 author: wdw1007
-language: zh-CN;zh
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://wdw1007.eu.org
-permalink: :year/:month/:day/:title_:hash/
+url: https://wdw1007.eu.org/
+root: /
+permalink: :year/:month:day/:title_:hash/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -45,7 +46,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
