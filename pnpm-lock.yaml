@@ -8,18 +8,9 @@ dependencies:
   hexo:
     specifier: 7.0.0-rc2
     version: 7.0.0-rc2
-<<<<<<< HEAD
   hexo-algoliasearch:
     specifier: ^1.0.0
     version: 1.0.0
-=======
-<<<<<<< HEAD
-=======
-  hexo-algoliasearch:
-    specifier: ^1.0.0
-    version: 1.0.0
->>>>>>> 2f75674 (update)
->>>>>>> a8dcf1b (update)
   hexo-deployer-git:
     specifier: ^4.0.0
     version: 4.0.0
@@ -65,8 +56,8 @@ dependencies:
 
 packages:
 
-  /@adobe/css-tools@4.3.0:
-    resolution: {integrity: sha512-+RNNcQvw2V1bmnBTPAtOLfW/9mhH2vC67+rUSi5T8EtEWt6lEnGNY2GuhZ1/YwbgikT1TkhvidCDmN5Q5YCo/w==}
+  /@adobe/css-tools@4.3.1:
+    resolution: {integrity: sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==}
     dev: false
 
   /@algolia/cache-browser-local-storage@4.4.0:
@@ -895,11 +886,6 @@ packages:
       - chokidar
     dev: false
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> a8dcf1b (update)
   /hexo-filter-github-emojis@3.0.5:
     resolution: {integrity: sha512-0Sy5I/9UK8IpwB4EGRKdg+G17qc6YA9R+Rjgme9Qm6kFnbKlFiximzWNmRkZUYEAlY0qm4HJh/t5s5AtXEDciA==}
     engines: {node: '>=8.0.0'}
@@ -914,10 +900,6 @@ packages:
       - utf-8-validate
     dev: false
 
-<<<<<<< HEAD
-=======
->>>>>>> 2f75674 (update)
->>>>>>> a8dcf1b (update)
   /hexo-front-matter@4.0.0:
     resolution: {integrity: sha512-2pQ24inDCdqbxuKQ4cK+1ak0AhSEVC1zTY/kVVyqi5m3lB/wYtAjSWp+elp+FqBmJOynogMpoBnUry/4fJkmAg==}
     engines: {node: '>=14'}
@@ -1941,7 +1923,7 @@ packages:
     resolution: {integrity: sha512-lQ9w/XIOH5ZHVNuNbWW8D822r+/wBSO/d6XvtyHLF7LW4KaCIDeVbvn5DF8fGCJAUCwVhVi/h6J0NUcnylUEjg==}
     hasBin: true
     dependencies:
-      '@adobe/css-tools': 4.3.0
+      '@adobe/css-tools': 4.3.1
       debug: 4.3.4
       glob: 7.2.3
       sax: 1.2.4
