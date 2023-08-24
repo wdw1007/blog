@@ -16,6 +16,8 @@ related_post 文章图片 文章封面
 comments  
 文章搜索  
 footerBar  
+底部条幅  
+page 页顶部图
 #### 进阶配置  
 valine  
 footer  

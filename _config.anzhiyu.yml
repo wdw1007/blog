@@ -174,7 +174,7 @@ index_img: "background: url(/image/bg.jpg) no-repeat bottom / cover"
 # "background: url() top / cover no-repeat"
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: "background: url(/image/bg.jpg) no-repeat bottom / cover"
+default_top_img: /image/bg.jpg
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -513,7 +513,7 @@ footer:
         shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 使用 AnZhiYu 主题
       - link: https://vercel.com
-        shields: https://img.shields.io/badge/%E9%83%A8%E7%BD%B2%E4%BA%8E_Vercel-blue?logo=vercel&label=Vercel
+        shields: https://img.shields.io/badge/Vercel-blue?logo=vercel&label=PaaS
         message: 部署于 Vercel
       - link: https://github.com/
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
@@ -629,7 +629,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics:
+google_analytics: G-VB7Z4FFDF2
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -637,11 +637,11 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics:
+cloudflare_analytics: 983b79d11b4447169872f60c7b3fbd11
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity:
+microsoft_clarity: ikduem5o10
 
 # Advertisement
 # --------------------------------------
@@ -1163,7 +1163,7 @@ comment_barrage_config:
 # 左下角音乐配置项
 # https://github.com/metowolf/MetingJS
 nav_music:
-  enable: false
+  enable: true
   console_widescreen_music: false # 宽屏状态控制台显示音乐而不是标签 enable为true 控制台依然会显示
   id: 2175306608
   server: netease
@@ -1257,7 +1257,7 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
 
   bottom:
-
+  - <script async src="https://umami.wdw1007.eu.org/script.js" data-website-id="d0909abc-0037-4b82-a1bb-83cb15740084"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
