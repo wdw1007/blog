@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: wdw1007
-subtitle: '摸鱼'
-description: ''
+title: wdw1007 的未完工站点
+subtitle: ''
+description: '个人博客'
 keywords:
 author: wdw1007
 language: zh-CN
@@ -104,9 +104,3 @@ theme: anzhiyu
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-# APlayer
-# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
-aplayer:
-  meting: true
-  asset_inject: false
