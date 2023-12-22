@@ -45,7 +45,7 @@ code_word_wrap: true
 # copy settings
 # copyright: Add the copyright information after copied content (複制的内容后面加上版权信息)
 copy:
-  enable: true
+  enable: false
   copyright:
     enable: false
     limit_count: 50
@@ -63,16 +63,8 @@ author_status:
   status: ✍️
   alias: writing_hand
   fallback_src: https://github.githubassets.com/images/icons/emoji/unicode/270d.png
-  text: on Studying
-  skills:
-    # - 🤖️ 数码科技爱好者
-    # - 🔍 分享与热心帮助
-    # - 🏠 智能家居小能手
-    # - 🔨 设计开发一条龙
-    # - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
-    # - 🧱 团队小组发动机
-    # - 💢 壮汉人狠话不多
+  text: 
+  skills: 
 
 # search (搜索)
 # see https://blog.anheyu.com/posts/c27d.html#搜索系统
@@ -163,7 +155,7 @@ favicon: /image/favicon.ico
 
 # Avatar (头像)
 avatar:
-  img: https://gravatar.loli.net/avatar/2172f83b77ef65d6100ebb53e5bea260.jepg?s=400
+  img: https://gravatar.loli.net/avatar/2172f83b77ef65d6100ebb53e5bea260.jepg
   effect: false
 
 # Disable all banner image
@@ -183,7 +175,7 @@ cover:
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
     - /image/bg.jpg
@@ -205,7 +197,7 @@ post_meta:
     date_format: date # date/relative/simple 显示日期还是相对日期 或者 简单日期
     categories: true # true or false 主页是否显示分类
     tags: true # true or false 主页是否显示标籤
-    label: true # true or false 显示描述性文字
+    label: false # true or false 显示描述性文字
   post:
     date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
     date_format: date # date/relative 显示日期还是相对日期
@@ -258,7 +250,7 @@ post_copyright:
   enable: true
   decode: false
   author_href:
-  # location: 
+  # location: 中国
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
   avatarSinks: false # hover时头像下沉
@@ -300,9 +292,11 @@ related_post:
 photofigcaption: false
 
 # post_pagination (分页)
-# value: 1 || 2 || false
+# value: 1 || 2 || 3 || 4 || false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
+# 3: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章)
+# 4: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章) 显示图片cover
 # false: disable pagination
 post_pagination: 2
 
@@ -336,7 +330,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Valine/Waline/Twikoo/Artalk
-  use: Waline
+  use: # Twikoo/Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -371,71 +365,13 @@ valine:
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL:  # Waline server address url
-  bg:  # waline background
+  serverURL: # Waline server address url
+  bg: # waline background
   pageview: false
   meta: false # 归属地, 操作系统 前是否显示图标
   imageUploader: true # 是否启用图片上传功能，默认开启，限制为 128kb 的 base64 图片
-  # 如果你需要启用自定义图片上传方式，请注释上方默认行为，取消下方注释，自行编写函数
-  # 并根据实际上传方式进行参数调整，以下为示例 注意 imageUploader: > 参数中的 > 不可删除
-  # imageUploader: >
-  #   function (file) {
-  #     let formData = new FormData();
-  #     let headers = new Headers();
-  #     formData.append("file", file);
-  #     formData.append("album_id", "10");
-  #     formData.append("permission", "0");
-  #     headers.append("Authorization", "Bearer 你的Token");
-  #     headers.append("Accept", "application/json");
-  #     return fetch("你的 API 上传地址", {
-  #       method: "POST",
-  #       headers: headers,
-  #       body: formData,
-  #     })
-  #       .then((resp) => resp.json())
-  #       .then((resp) => resp.data.links.url);
-  #   }
-
   # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
   option:
-    pageSize: 10
-    requiredMeta: ["nick", "mail"]
-    login: enable
-    copyright: true
-    # turnstileKey: 
-    locale:
-      admin: 安知鱼
-      sofa: 欢迎使用 安知鱼 主题！
-      placeholder: "生活明朗，万物可爱"
-    #   reactionTitle: 就现在，表明你的态度！
-    #   reaction0: 0
-    #   reaction1: 1
-    #   reaction2: 2
-    #   reaction3: 3
-    #   reaction4: 4
-    #   reaction5: 5
-    #   level0: 0
-    #   level1: 1
-    #   level2: 2
-    #   level3: 3
-    #   level4: 4
-    #   level5: 5
-    #   level6: 6
-    #   level7: ...
-    # emoji:
-    #   [
-    #     "https://example.com/.../Sticker-100/",
-    #   ]
-    # reaction:
-    #   [
-    #     "https://example.com/.../Sticker-100/0.png",
-    #     "https://example.com/.../Sticker-100/1.png",
-    #     "https://example.com/.../Sticker-100/2.png",
-    #     "https://example.com/.../Sticker-100/3.png",
-    #     "https://example.com/.../Sticker-100/4.png",
-    #     "https://example.com/.../Sticker-100/5.png",
-    #   ]
-
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
@@ -589,7 +525,7 @@ footer:
   footerBar:
     enable: true
     authorLink: /
-    cc: 
+    cc:
       enable: false
       link: /copyright
     linkList:
@@ -598,7 +534,7 @@ footer:
       # - link: https://image.anheyu.com
       #   text: 图床
       # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+      #   text: 萌ICP备-xxxxxxx号
     subTitle:
       enable: false
       # Typewriter Effect (打字效果)
@@ -629,7 +565,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: G-VB7Z4FFDF2
+google_analytics:
 
 # CNZZ Analytics
 # https://www.umeng.com/
@@ -641,7 +577,7 @@ cloudflare_analytics: 983b79d11b4447169872f60c7b3fbd11
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
-microsoft_clarity: ikduem5o10
+microsoft_clarity:
 
 # Advertisement
 # --------------------------------------
@@ -679,9 +615,9 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#3b70fc"
+  main: "#425AEF"
   dark_main: "#f2b94b"
-  paginator: "#3b70fc"
+  paginator: "#425AEF"
   #   button_hover: "#FF7242"
   text_selection: "#2128bd"
   link_color: "var(--anzhiyu-fontcolor)"
@@ -689,13 +625,23 @@ theme_color:
   hr_color: "#4259ef23"
   code_foreground: "#fff"
   code_background: "var(--anzhiyu-code-stress)"
-  toc_color: "#3b70fc"
-  #   blockquote_padding_color: "#3b70fc"
-  #   blockquote_background_color: "#3b70fc"
+  toc_color: "#425AEF"
+  #   blockquote_padding_color: "#425AEF"
+  #   blockquote_background_color: "#425AEF"
   scrollbar_color: "var(--anzhiyu-scrollbar)"
   meta_theme_color_light: "#f7f9fe"
   meta_theme_color_dark: "#18171d"
-  inside_sidebar_background: "#607d8b" # @since 1.5.4 支持手机端侧边栏可定制颜色
+
+# 移动端侧栏
+sidebar:
+  site_data:
+    archive: true
+    tag: true
+    category: true
+  menus_items: true
+  tags_cloud: true
+  display_mode: true
+  nav_menu_project: true
 
 # 文章h2添加分隔线
 h2Divider: false
@@ -846,7 +792,7 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
-  avatar: # 自定义头像
+  avatar: https://gravatar.loli.net/avatar/2172f83b77ef65d6100ebb53e5bea260.jepg
 
 # aside (侧边栏)
 # --------------------------------------
@@ -865,7 +811,7 @@ aside:
     enable: true
     description: # <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
     name_link: /
-  
+
   card_announcement:
     enable: false
     content: 欢迎来看我的博客鸭~
@@ -952,7 +898,23 @@ translate:
 readmode: true
 
 # 中控台
-centerConsole: true
+centerConsole:
+  enable: false
+  card_tags:
+    enable: true
+    limit: 40 # if set 0 will show all
+    color: false
+    sort_order: # Don't modify the setting unless you know how it works
+    highlightTags:
+      # - Hexo
+      # - 前端
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: MMMM YYYY # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+    sort_order: # Don't modify the setting unless you know how it works
 
 # dark mode
 darkmode:
@@ -1028,6 +990,8 @@ pjax:
   enable: true
   exclude:
     # - xxxx
+    # - xxxx
+
 # Inject the css and script (aplayer/meting)
 aplayerInject:
   enable: true
@@ -1040,7 +1004,7 @@ aplayerInject:
 snackbar:
   enable: true
   position: top-center
-  bg_light: "#3b70fc" # The background color of Toast Notification in light mode
+  bg_light: "#425AEF" # The background color of Toast Notification in light mode
   bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
@@ -1184,7 +1148,7 @@ ptool:
 
 # 欢迎语配置
 greetingBox:
-  enable: false
+  enable: false #开启后必须配置下面的list对应的时间段，不然会出现小白条
   default: 晚上好👋
   list:
     # - greeting: 晚安😴
@@ -1212,7 +1176,6 @@ greetingBox:
     #   startTime: 20
     #   endTime: 24
 
-
 # 文章顶部ai摘要
 post_head_ai_description:
   enable: false
@@ -1239,14 +1202,31 @@ accesskey:
 linkPageTop: 
   enable: false
   title: 与数百名博主无限进步
+  # 添加博主友链的评论自定义格式
+  addFriendPlaceholder: "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"
 
 # 缩略图后缀 archive/tag/category 页面单独开启后缀
-pageThumbnailSuffix: ''
+pageThumbnailSuffix: ""
 
 # 隐私协议弹窗
 agreementPopup:
   enable: false
   url: /privacy
+
+# 右键菜单
+rightClickMenu:
+  enable: false
+
+# 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
+peoplecanvas:
+  enable: false
+  img: https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png
+
+# 动效
+dynamicEffect:
+  postTopWave: true # 文章顶部波浪效果
+  postTopRollZoomInfo: false # 文章顶部滚动时缩放
+  pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
@@ -1284,10 +1264,17 @@ CDN:
     # main:
     # utils:
     # translate:
+    # random_friends_post_js:
+    # right_click_menu_js:
+    # comment_barrage_js:
+    # ai_abstract_js:
+    # people_js:
     # local_search:
     # algolia_js:
     # algolia_search:
     # instantsearch:
+    # docsearch_js:
+    # docsearch_css:
     # pjax:
     # blueimp_md5:
     # valine:
@@ -1319,9 +1306,9 @@ CDN:
     # fontawesome:
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
-    # aplayer_css: https://jsd.onmicrosoft.cn/npm/aplayer/dist/APlayer.min.css
-    # aplayer_js: https://jsd.onmicrosoft.cn/npm/aplayer/dist/APlayer.min.js
-    # meting_js: https://jsd.onmicrosoft.cn/npm/meting@2/dist/Meting.min.js
+    # aplayer_css:
+    # aplayer_js:
+    # meting_js:
     # meting_api:
     # prismjs_js:
     # prismjs_lineNumber_js:
